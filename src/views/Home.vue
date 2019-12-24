@@ -60,6 +60,7 @@ export default {
   border-radius: 4px;
   padding: 20px;
   font-size: 20px;
+  overflow: auto;
   &:focus {
     border: 0;
     outline: 0;
