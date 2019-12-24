@@ -3,9 +3,7 @@
     <h1>Simple Text editor in Vue</h1>
     <div class="container">
       <div class="commands">
-        <el-button type="primary" @click="modifyText('bold')">
-          Bold
-        </el-button>
+        <el-button type="primary" @click="modifyText('bold')">Bold</el-button>
         <el-button type="primary" @click="modifyText('italic')">
           Italic
         </el-button>
@@ -18,7 +16,9 @@
       </div>
       <div class="text-editor" contenteditable="true">Type anything here</div>
     </div>
-    <div class="generated-html"></div>
+    <div class="footer-message">
+      Select the text and click on the modification buttons to modify it
+    </div>
   </div>
 </template>
 <script>
@@ -68,5 +68,10 @@ export default {
     border: 0;
     outline: 0;
   }
+}
+.footer-message {
+  color: #ccc;
+  font-style: italic;
+  margin-top: 10px;
 }
 </style>
